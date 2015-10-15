@@ -9,7 +9,6 @@ PImage treasureImg;
 int x,a,b,c,e;
 int rectmode;
 int y;
-int z;
 void setup () {
   
   size(640,480) ;// must use this size.
@@ -29,19 +28,18 @@ void setup () {
 
 void draw() {
   image(bg1Img,y,0);
-  y++;y%=1280;
+  y ++;
+  y %=1280;
   image(bg2Img,y-640,0);
-  z++;
   image(bg1Img,y-1280,0);
   image(enemyImg,x,c);
   image(fighterImg,500,200);
-  
   image(treasureImg,a,b);
   rect(10,15,e,15);
   fill(#ff0000);
   x += 2;
   x %=640;// enemy
-  
+ 
  image(hpImg,2,10);
   
  
